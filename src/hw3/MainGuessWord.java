@@ -7,6 +7,7 @@ public class MainGuessWord {
     static Scanner scanner;
     static Random random;
     public static void main(String[] args) {
+        //comment
         scanner = new Scanner(System.in);
         random = new Random();
         int wordToGuessNum;

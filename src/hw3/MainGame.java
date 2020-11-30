@@ -8,6 +8,7 @@ public class MainGame {
     static Random random;
 
     public static void main(String[] args) {
+        //comment
         scanner = new Scanner(System.in);
         random = new Random();
         int bound = 10;
