@@ -32,4 +32,7 @@ public class Employee {
                     " Возраст : " + age);
         }
 
+        public int getAge() {
+            return age;
+        }
 }
