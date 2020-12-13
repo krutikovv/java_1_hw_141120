@@ -18,10 +18,11 @@ public class Main {
         employee[4] = new Employee("Пакетиков Денис Людвигович",
                 "Повар", "paketikov@e.com", "88000003539",
                 12134, 39);
+        employee[0].infoHeader();
         for (int i = 0; i < 5; i++) {
-            if (employee[i].getAge() > 40) {
+            //if (employee[i].getAge() > 40) {
                 employee[i].info();
-            }
+            //}
         }
     }
 }

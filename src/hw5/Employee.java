@@ -1,5 +1,7 @@
 package hw5;
 
+import java.lang.Object;
+
 public class Employee {
         private String fullName;
         private String position;
@@ -22,14 +24,27 @@ public class Employee {
             this.age = age;
         }
 
+        void infoHeader() {
+            System.out.printf("%-40s %-30s %-20s %-20s %-15s %-15s\n",
+                    "ФИО",
+                    "Должность",
+                    "email",
+                    "Моб. телефон",
+                    "Зарплата",
+                    "Возраст");
+        }
         void info() {
-            System.out.printf("%s %s %s %s %s %s\n",
-                    "ФИО : " + fullName,
-                    " Должность : " + position,
-                    " email : " + email,
-                    " Моб. тел. " + mobilePhone,
-                    " ЗП : " + salary,
-                    " Возраст : " + age);
+            for (int i = 0; i < 140; i++) {
+                System.out.print("-");
+            }
+            System.out.println();
+            System.out.printf("%-40s %-30s %-20s %-20s %-15s %-15s\n",
+                    fullName,
+                    position,
+                    email,
+                    mobilePhone,
+                    salary,
+                    age);
         }
 
         public int getAge() {
